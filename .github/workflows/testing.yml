@@ -22,8 +22,7 @@ jobs:
               with:
                   push: true
                   tags: cloudymax76/integration-assi_task4:latest
-                  secrets: |
-                    GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
+                  
 
             - name: Run Docker Container
               run: docker run -d -p 5000:5000 cloudymax76/integration-assi_task4:latest
